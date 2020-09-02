@@ -1,0 +1,19 @@
+{
+  "name": "vite-ssr-example",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --ssr",
+    "serve": "node dist-ssr/index.js"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-rc.9",
+    "vue-router": "^4.0.0-beta.6"
+  },
+  "devDependencies": {
+    "vite": "^1.0.0-rc.4",
+    "express": "^4.17.1",
+    "@vue/compiler-sfc": "^3.0.0-rc.9",
+    "@vue/server-renderer": "^3.0.0-rc.9"
+  }
+}
