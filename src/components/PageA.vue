@@ -1,5 +1,5 @@
 <template>
-  <h1>I AM PAGE A</h1>
+  <h1>Page A</h1>
 </template>
 
 <script>
