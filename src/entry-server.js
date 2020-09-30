@@ -20,6 +20,8 @@ server.get('*', (req, res) => {
       return;
     }
     ; (async () => {
+      // __HTML__ will be replaced by rollup during build to contain the references
+      // to the client side bundles, after that the rendered html will be injected
       const html = await renderer.renderToString(app)
       res.end(`__HTML__`)
     })()
