@@ -15,6 +15,6 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/server-renderer": "^3.0.0",
     "express": "^4.17.1",
-    "vite": "^1.0.0-rc.4"
+    "vite": "^1.0.0-rc.8"
   }
 }

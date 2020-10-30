@@ -9,17 +9,12 @@ const replace = require('@rollup/plugin-replace');
     },
   })
 
-
   await ssrBuild({
     outDir: 'dist/server',
-    rollupOutputOptions: {
-      preserveModules: true,
-    },
     rollupInputOptions: {
-      preserveEntrySignatures: 'strict',
       plugins: [
         replace({
-          __HTML__: clientResult.html.replace('<div id="app">', '<div id="app" data-server-rendered="true">${html}')
+          __HTML__: clientResult[0].html.replace('<div id="app">', '<div id="app" data-server-rendered="true">${html}')
         })
       ],
       input: './src/entry-server.js'
