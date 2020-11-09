@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node build.js",
-    "serve": "node dist/server/src/entry-server"
+    "serve": "node dist/server/entry-server"
   },
   "dependencies": {
     "vue": "^3.0.0",
