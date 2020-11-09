@@ -2,7 +2,7 @@ import { createSSRApp } from 'vue'
 import renderer from '@vue/server-renderer';
 import App from './App.vue'
 import createRouter from './router'
-
+import config from './config';
 const express = require('express');
 const path = require('path');
 const server = express();
@@ -26,5 +26,5 @@ server.get('*', (req, res) => {
   });
 })
 
-console.log('started server...');
-server.listen(3111);
+console.log(`started server on port ${config.port}`);
+server.listen(config.port);
